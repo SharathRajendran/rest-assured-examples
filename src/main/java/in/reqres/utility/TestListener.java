@@ -42,23 +42,23 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestStart (final ITestResult result) {
-        logMessage ("Test Execution Started...." + result.getName ());
+        logMessage ("Test Execution Started...." + result.getName());
     }
 
     @Override
     public void onTestSuccess (final ITestResult result) {
-        logMessage ("Test Passed Successfully." + result.getName ());
+        logMessage ("Test Passed Successfully." + result.getName());
 
     }
 
     @Override
     public void onTestFailure (final ITestResult result) {
-        logMessage ("Test Failed!!!!" + result.getName ());
+        logMessage ("Test Failed!!!!" + result.getName());
     }
 
     @Override
     public void onFinish (final ITestContext context) {
-        logMessage ("Test Execution Completed Successfully for all tests!!" + context.getSuite ()
+        logMessage ("Test Execution Completed Successfully for all tests!!" + context.getSuite()
             .getAllMethods ());
 
     }
